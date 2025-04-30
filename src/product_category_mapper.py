@@ -8,16 +8,18 @@ def get_product_category_pairs(
 ) -> DataFrame:
     """
     Returns a DataFrame containing:
-    1. All "Product Name - Category Name" pairs
-    2. All product names that have no categories
+    1. All "Product Name - Category Name" pairs.
+    2. All product names that have no categories.
 
     Args:
-        products_df: DataFrame with product information (must have 'id' and 'name')
-        categories_df: DataFrame with category information (must have 'id' and 'name')
-        product_category_df: DataFrame with product-category relationships (must have 'product_id' and 'category_id')
-
+        products_df: DataFrame with product information
+        (must have "id" and "name")
+        categories_df: DataFrame with category information
+        (must have "id" and "name")
+        product_category_df: DataFrame with product-category relationships
+        (must have "product_id" and "category_id")
     Returns:
-        DataFrame with columns: 'product_name', 'category_name'
+        DataFrame with columns: "product_name", "category_name"
     """
     # Join products with the relationship table
     products_with_relations = products_df.join(
