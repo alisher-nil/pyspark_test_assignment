@@ -8,3 +8,10 @@ dependencies = [
     "pyspark>=3.5.5",
     "pytest>=8.3.5",
 ]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-vv -rP --maxfail=2 -p no:cacheprovider --disable-warnings"
+testpaths = [
+    "tests"
+]
