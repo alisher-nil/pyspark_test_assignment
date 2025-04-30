@@ -19,7 +19,7 @@ def get_product_category_pairs(
         product_category_df: DataFrame with product-category relationships
         (must have "product_id" and "category_id")
     Returns:
-        DataFrame with columns: "product_name", "category_name"
+        DataFrame with columns: "product", "category"
     """
     # Join products with the relationship table
     products_with_relations = products_df.join(
