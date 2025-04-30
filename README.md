@@ -20,9 +20,13 @@ The core function `get_product_category_pairs()` performs:
 2. A left join with categories to get category names
 3. Selection of only the product and category names for the final result
 
-## Requirements
+## Prerequisites
 - [Java Runtime Environment](https://www.java.com/en/download/)
 - Python 3.13 or higher
+
+## Dependencies
+- PySpark 3.5.0
+- Pytest 8.3.5 for testing
 
 ## Installation
 
