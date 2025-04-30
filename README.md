@@ -5,9 +5,9 @@ This repository contains a solution for mapping products to categories using PyS
 ## Problem Statement
 
 Given three DataFrames representing:
-1. Products (with id and name)
-2. Categories (with id and name)
-3. Product-Category relationships (many-to-many mappings)
+1. Products (with `id` and `name`)
+2. Categories (with `id` and `name`)
+3. Product-Category relationships (many-to-many mappings with `product_id` and `category_id` columns)
 
 The task is to create a PySpark method that returns a single DataFrame containing:
 - All "Product Name - Category Name" pairs
