@@ -1,4 +1,4 @@
-# Product-Category Mapping in PySpark
+# Product-Category Mapping in PySpark Test Assignment
 
 This repository contains a solution for mapping products to categories using PySpark DataFrames.
 
