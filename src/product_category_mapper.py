@@ -24,14 +24,14 @@ def get_product_category_pairs(
     # Join products with the relationship table
     products_with_relations = products_df.join(
         product_category_df,
-        products_df["id"] == product_category_df["product_id"],
+        on=products_df["id"] == product_category_df["product_id"],
         how="left",
     )
 
     # Join with categories
     result_with_names = products_with_relations.join(
         categories_df,
-        product_category_df["category_id"] == categories_df["id"],
+        on=product_category_df["category_id"] == categories_df["id"],
         how="left",
     )
 
